@@ -3,119 +3,154 @@
 <html lang="en">
 <head>
 
-  <meta charset="utf-8">
-  <meta name="description" content="Get desired search results from google">
-  <meta name="keywords" content="Google search, google tricks, seach tricks">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Avinash Tingre">
+<meta charset="utf-8">
+<meta name="description"
+	content="Get desired search results from google">
+<meta name="keywords"
+	content="Google search, google tricks, seach tricks">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Avinash Tingre">
 
-  <meta property="og:image" content="https://tingreavinash.github.io/img/profile.jpeg" />
-  <meta property="og:image:secure_url" content="https://tingreavinash.github.io/img/profile.jpeg" />
-  
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://tingreavinash.github.io/google_search" />
+<meta property="og:image"
+	content="https://tingreavinash.github.io/img/profile.jpeg" />
+<meta property="og:image:secure_url"
+	content="https://tingreavinash.github.io/img/profile.jpeg" />
 
-  <title>Advanced Google Search</title>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:url"
+	content="https://tingreavinash.github.io/google_search" />
 
-  
+<title>Advanced Google Search</title>
+<link href="css/index.css" rel="stylesheet">
+
 <script type="text/javascript" src="js/index.js"></script>
 
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+	rel="stylesheet">
 
-  <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
-  <link rel="manifest" href="/site.webmanifest">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180"
+	href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+<link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body id="page-top" class="custom-scrollbar-css">
 
+	<div class="custom-header"
+		style="color: #FFFFFF; text-align: center; padding: 5px 5px;">
+		<h2 style="font-family: 'Merriweather', serif;">
+		Advanced Google Search
+		</h2>
+	
+	</div>
 
-<div class="container">
-  <div style="margin-top: 10px;" >
+	<div class="container">
+
+		<div style="margin-top: 20px;">
 
 
-    <div class="form-group row">
-      <div class="col col-sm-3">
-        <label for="siteid">Show results from: (Optional)</label>
-      </div>
-      <div class="col col-sm-9">
-        <input type="text" placeholder="example.com" value="" class="form-control form-control-sm" id="siteid">
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" value="quora.com" onclick="document.getElementById('siteid').value=this.value"  id="customRadioInline1" name="customRadioInline" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline1">Quora</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" value="dzone.com" onclick="document.getElementById('siteid').value=this.value" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline2">Dzone</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" value="gist.github.com" onclick="document.getElementById('siteid').value=this.value" id="customRadioInline3" name="customRadioInline" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline3">Gist Pages</label>
-        </div>
-
-      </div>
-      
-    </div>
-    
-          <div class="form-group row">
-            <div class="col col-sm-3">
-              <label for="textField">Search Input:</label>
-            </div>
-            <div class="col col-sm-9">
-              <input type="text" id="textField" class="form-control form-control-sm" name="textField"
-            style="margin-bottom: 5px;">
-            </div>
-					  
+			<div class="form-group row">
+				<div class="col col-sm-3">
+					<label for="siteid">Show results from: (Optional)</label>
+				</div>
+				<div class="col col-sm-9">
+					<input type="text" placeholder="example.com" value=""
+						class="form-control form-control-sm" id="siteid">
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" value="quora.com"
+							onclick="document.getElementById('siteid').value=this.value"
+							id="customRadioInline1" name="customRadioInline"
+							class="custom-control-input"> <label
+							class="custom-control-label" for="customRadioInline1">Quora</label>
 					</div>
-					
-					<div class="row justify-content-center">
-						<button type="submit" style="width:100px;margin-top:30px" id="searchBtn" name="searchBtn"
-							value="searchClicked" onclick="handleSearch()" class="btn btn-sm btn-outline-danger">
-							Search
-						</button>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" value="dzone.com"
+							onclick="document.getElementById('siteid').value=this.value"
+							id="customRadioInline2" name="customRadioInline"
+							class="custom-control-input"> <label
+							class="custom-control-label" for="customRadioInline2">Dzone</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" value="gist.github.com"
+							onclick="document.getElementById('siteid').value=this.value"
+							id="customRadioInline3" name="customRadioInline"
+							class="custom-control-input"> <label
+							class="custom-control-label" for="customRadioInline3">Gist
+							Pages</label>
 					</div>
 
 				</div>
-      </div>
 
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="js/resume.min.js"></script>
+			</div>
 
-<script type="text/javascript">
-  $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-</script>
-<script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
-  </script>
+			<div class="form-group row">
+				<div class="col col-sm-3">
+					<label for="textField">Search Input:</label>
+				</div>
+				<div class="col col-sm-9">
+					<input type="text" id="textField"
+						class="form-control form-control-sm" name="textField"
+						style="margin-bottom: 5px;">
+				</div>
+
+			</div>
+
+			<div class="row justify-content-center">
+				<button type="submit" style="width: 100px; margin-top: 30px"
+					id="searchBtn" name="searchBtn" value="searchClicked"
+					onclick="handleSearch()" class="btn btn-sm btn-outline-secondary">
+					Search</button>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/popper/popper.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	<script src="js/resume.min.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(
+				function() {
+					'use strict';
+					window.addEventListener('load', function() {
+						// Fetch all the forms we want to apply custom Bootstrap validation styles to
+						var forms = document
+								.getElementsByClassName('needs-validation');
+						// Loop over them and prevent submission
+						var validation = Array.prototype.filter.call(forms,
+								function(form) {
+									form.addEventListener('submit', function(
+											event) {
+										if (form.checkValidity() === false) {
+											event.preventDefault();
+											event.stopPropagation();
+										}
+										form.classList.add('was-validated');
+									}, false);
+								});
+					}, false);
+				})();
+	</script>
 </body>
 
 </html>
